@@ -3,10 +3,10 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Server is running ✔️");
+  res.send("Server is running successfully!");
 });
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log("Server started on port " + port);
+  console.log("Server is running on port " + port);
 });
